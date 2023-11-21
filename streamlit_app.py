@@ -13,7 +13,7 @@ my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/da
 streamlit.dataframe(my_fruit_list)
 
 #let's put a pick list here
-streamlit.multiselect("Pick some fruits:", list(my_fruit_index.index))
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 #display the table on the page 
 streamlit.dataframe(my_fruit_list)
